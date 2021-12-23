@@ -58,10 +58,10 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**✣**")
-    await xx.edit("**✣✣**")
-    await xx.edit("**✣✣✣**")
-    await xx.edit("**✣✣✣✣**")
+    xx = await edit_or_reply(ping, "**D**")
+    await xx.edit("**Dz**")
+    await xx.edit("**DzL**")
+    await xx.edit("**DzLy**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
@@ -69,7 +69,7 @@ async def _(ping):
         f"**PONG!!🏓**\n"
         f"✣ **Pinger** - `%sms`\n"
         f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡Dz Ganteng :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -82,7 +82,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**PONG!! 🍭**\n**nyee** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -91,11 +91,11 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    lping = await edit_or_reply(ping, "**★ PING ★**")
-    await lping.edit("**★★ PING ★★**")
-    await lping.edit("**★★★ PING ★★★**")
-    await lping.edit("**★★★★ PING ★★★★**")
-    await lping.edit("**✦҈͜͡➳ PONG!**")
+    lping = await edit_or_reply(ping, "**•D•**")
+    await lping.edit("**•Dz•**")
+    await lping.edit("**•DzL•**")
+    await lping.edit("**•DzLy•**")
+    await lping.edit("**✦҈͜͡➳ DzL**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
@@ -104,7 +104,7 @@ async def _(ping):
         f"`%sms` \n"
         f"❃ **Uptime -** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡➳ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡➳ dz :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
