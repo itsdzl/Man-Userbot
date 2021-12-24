@@ -7,24 +7,24 @@ from userbot.utils import edit_or_reply, man_cmd
 
 @man_cmd(pattern="p(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**Assalamualaikum Dulu Biar Sopan**")
+    await edit_or_reply(event, "**assalamualaikum**")
 
 
 @man_cmd(pattern="pe(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**Assalamualaikum Warahmatullahi Wabarakatuh**")
+    await edit_or_reply(event, "**assalamualaikum Warahmatullahi Wabarakatuh**")
 
 
-@man_cmd(pattern="P(?: |$)(.*)")
+@man_cmd(pattern="dz(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, f"**Haii Salken Saya {owner}**")
+    xx = await edit_or_reply(event, f"**cuma mo bilang**")
     sleep(2)
-    await xx.edit("**Assalamualaikum...**")
+    await xx.edit("**Diz ganteng bet**")
 
 
 @man_cmd(pattern="l(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**Wa'alaikumsalam**")
+    await edit_or_reply(event, "**waalaikumsalam**")
 
 
 @man_cmd(pattern="a(?: |$)(.*)")
@@ -38,14 +38,14 @@ async def _(event):
 async def _(event):
     xx = await edit_or_reply(event, "**JAKA SEMBUNG BAWA GOLOK**")
     sleep(3)
-    await xx.edit("**NIMBRUNG GOBLOKK!!!🔥**")
+    await xx.edit("**NIMBRUNG GOBLOKK!!!**")
 
 
 @man_cmd(pattern="k(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, f"**Hallo KIMAAKK SAYA {owner}**")
+    xx = await edit_or_reply(event, f"**Hallo KIMAAKK**")
     sleep(2)
-    await xx.edit("**LU SEMUA NGENTOT 🔥**")
+    await xx.edit("**LU SEMUA NGENTOT**")
 
 
 @man_cmd(pattern="ass(?: |$)(.*)")
