@@ -22,7 +22,7 @@ from userbot.events import man_cmd
 @bot.on(man_cmd(pattern=r"whois(?: |$)(.*)", outgoing=True))
 async def who(event):
 
-    await event.edit("`Mengambil Informasi Pengguna Ini...`")
+    await event.edit("`Getting Data User...`")
 
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -36,7 +36,7 @@ async def who(event):
     try:
         photo, caption = await fetch_info(replied_user, event)
     except AttributeError:
-        return await event.edit("**Saya Tidak Mendapatkan Informasi Apapun.**")
+        return await event.edit("**nothing found...**")
 
     message_id_to_reply = event.message.reply_to_msg_id
 
@@ -137,19 +137,19 @@ async def fetch_info(replied_user, event):
     username = f"@{username}" if username else ("Tidak Menggunakan Username")
     user_bio = "Tidak Menggunakan Bio" if not user_bio else user_bio
 
-    caption = "<b>INFORMASI PENGGUNA :</b>\n\n"
-    caption += f"Nama Depan : {first_name}\n"
-    caption += f"Nama Belakang : {last_name}\n"
+    caption = "<b>DATA USER :</b>\n\n"
+    caption += f"First Name : {first_name}\n"
+    caption += f"Last Name : {last_name}\n"
     caption += f"Username : {username}\n"
     caption += f"Data Centre ID : {dc_id}\n"
-    caption += f"Total Foto Profil : {replied_user_profile_photos_count}\n"
-    caption += f"Apakah Bot : {is_bot}\n"
-    caption += f"Apakah Dibatasi : {restricted}\n"
-    caption += f"Diverifikasi Oleh Telegram : {verified}\n"
+    caption += f"Total Pfp : {replied_user_profile_photos_count}\n"
+    caption += f"Bot : {is_bot}\n"
+    caption += f"Limit : {restricted}\n"
+    caption += f"verified : {verified}\n"
     caption += f"User ID : <code>{user_id}</code>\n\n"
     caption += f"Bio : <code>{user_bio}</code>\n\n"
-    caption += f"Group yang sama Dengan Pengguna Ini : {common_chat}\n"
-    caption += "Link Permanen Ke Profil : "
+    caption += f"Same Group : {common_chat}\n"
+    caption += "Permanent Link : "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
 
     return photo, caption
