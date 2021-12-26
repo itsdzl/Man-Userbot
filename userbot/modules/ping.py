@@ -58,18 +58,19 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**D**")
-    await xx.edit("**Dz**")
-    await xx.edit("**DzL**")
-    await xx.edit("**DzLy**")
+    xx = await edit_or_reply(ping, "**∆**")
+    await xx.edit("**[Dz]**")
+    await xx.edit("**[DzL]**")
+    await xx.edit("**[DzLy]**")
+    await xx.edit("**[itsDzL]**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await xx.edit(
-        f"**PONG!!🏓**\n"
-        f"✣ **Pinger** - `%sms`\n"
+        f"**DzLyzz⚡**\n"
+        f"✣ **Pong!🏓** - `%sms`\n"
         f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡DzL** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡me** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -104,7 +105,7 @@ async def _(ping):
         f"`%sms` \n"
         f"❃ **Uptime -** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡➳ dz :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡➳ gua :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -196,10 +197,10 @@ async def _(speed):
 async def _(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
-    xx = await edit_or_reply(pong, "`Sepong.....🏓`")
+    xx = await edit_or_reply(pong, "`!!!!!!!.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
+    await xx.edit("👣 **dz-Ping!**\n`%sms`" % (duration))
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
