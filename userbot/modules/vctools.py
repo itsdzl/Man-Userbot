@@ -110,13 +110,8 @@ async def join_(event):
             chat = await event.client.parse_id(chat)
         except Exception as e:
             return await event.eor(get_string("vcbot_2").format(str(e)))
-    else:
-        chat = event.chat_id
-    ultSongs = Player(chat, event)
-    if not ultSongs.group_call.is_connected:
-        await ultSongs.vc_joiner()
 
-@man_cmd(pattern="(leavevc|stopvc)")
+@man_cmd(pattern="(leavevc|endvc)")
 async def leaver(event):
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
@@ -124,15 +119,6 @@ async def leaver(event):
             chat = await event.client.parse_id(chat)
         except Exception as e:
             return await event.eor(get_string("vcbot_2").format(str(e)))
-    else:
-        chat = event.chat_id
-    ultSongs = Player(chat)
-    await ultSongs.group_call.stop()
-    if CLIENTS.get(chat):
-        del CLIENTS[chat]
-    if VIDEO_ON.get(chat):
-        del VIDEO_ON[chat]
-    await event.eor(get_string("vcbot_1"))
 
 
 CMD_HELP.update(
