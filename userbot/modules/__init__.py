@@ -84,3 +84,21 @@ def vc_asst(dec, **kwargs):
         )
 
     return ult
+
+async def vc_joiner(self):
+        chat_id = self._chat
+        done, err = await self.startCall()
+
+        if done:
+            await vcClient.send_message(
+                self._current_chat,
+                "• Joined VC in <code>{}</code>".format(chat_id),
+                parse_mode="html",
+            )
+            return True
+        await vcClient.send_message(
+            self._current_chat,
+            f"<strong>ERROR while Joining Vc -</strong> <code>{chat_id}</code> :\n<code>{err}</code>",
+            parse_mode="html",
+        )
+        return False
