@@ -102,7 +102,7 @@ async def change_title(e):
     except Exception as ex:
         await edit_delete(e, f"**ERROR:** `{ex}`")
 
-@man_cmd("joinvc")
+@man_cmd(pattern="joinvc")
 async def join_(event):
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
@@ -116,7 +116,7 @@ async def join_(event):
     if not ultSongs.group_call.is_connected:
         await ultSongs.vc_joiner()
 
-@man_cmd("(leavevc|stopvc)")
+@man_cmd(pattern="(leavevc|stopvc)")
 async def leaver(event):
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
