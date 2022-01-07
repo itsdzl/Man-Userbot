@@ -102,23 +102,6 @@ async def change_title(e):
     except Exception as ex:
         await edit_delete(e, f"**ERROR:** `{ex}`")
 
-@man_cmd(pattern="joinvc")
-async def join_(event):
-    if len(event.text.split()) > 1:
-        chat = event.text.split()[1]
-        try:
-            chat = await event.client.parse_id(chat)
-        except Exception as e:
-            return await event.eor(get_string("vcbot_2").format(str(e)))
-
-@man_cmd(pattern="(leavevc|endvc)")
-async def leaver(event):
-    if len(event.text.split()) > 1:
-        chat = event.text.split()[1]
-        try:
-            chat = await event.client.parse_id(chat)
-        except Exception as e:
-            return await event.eor(get_string("vcbot_2").format(str(e)))
 
 
 CMD_HELP.update(
