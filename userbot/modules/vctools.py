@@ -102,6 +102,38 @@ async def change_title(e):
     except Exception as ex:
         await edit_delete(e, f"**ERROR:** `{ex}`")
 
+@man_cmd(pattern="joinvc")
+async def join_(event):
+    if len(event.text.split()) > 1:
+        chat = event.text.split()[1]
+        try:
+            chat = await event.client.parse_id(chat)
+        except Exception as e:
+            return await event.eor(get_string("vcbot_2").format(str(e)))
+    else:
+        chat = event.chat_id
+    ultSongs = Player(chat, event)
+    if not ultSongs.group_call.is_connected:
+        await ultSongs.vc_joiner()
+
+
+@man_cmd(pattern="(leavevc|stopvc)")
+async def leaver(event):
+    if len(event.text.split()) > 1:
+        chat = event.text.split()[1]
+        try:
+            chat = await event.client.parse_id(chat)
+        except Exception as e:
+            return await event.eor(get_string("vcbot_2").format(str(e)))
+    else:
+        chat = event.chat_id
+    ultSongs = Player(chat)
+    await ultSongs.group_call.stop()
+    if CLIENTS.get(chat):
+        del CLIENTS[chat]
+    if VIDEO_ON.get(chat):
+        del VIDEO_ON[chat]
+    await event.eor(get_string("vcbot_1"))
 
 
 CMD_HELP.update(
