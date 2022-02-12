@@ -68,7 +68,7 @@ async def _(ping):
     user = await bot.get_me()
     await xx.edit(
         f"**Dz-⚡**\n"
-        f"✣ **Pong!🏓** - `%sms`\n"
+        f"✣ **Ping!🏓** - `%sms`\n"
         f"✣ **Uptime -** `{uptime}` \n"
         f"**✦҈͜͡ ** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
@@ -101,6 +101,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await lping.edit(
+        f"**Dz-uBot**\n"
         f"❃ **Ping !!** "
         f"`%sms` \n"
         f"❃ **Uptime -** "
@@ -200,7 +201,7 @@ async def _(pong):
     xx = await edit_or_reply(pong, "`!!!!!!!.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("👣 **dz-Ping!**\n`%sms`" % (duration))
+    await xx.edit("⚡ **Ping!**\n`%sms`" % (duration))
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
