@@ -171,9 +171,9 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭─━━━━━━━━━━━─╮** \n"
-        f"**   ⚡ 𝗗 𝗭 𝗟​ ⚡ ** \n"
+        f"**           ⚡ 𝗗 𝗭 𝗟​ ⚡  ** \n"
         f"**╰─━━━━━━━━━━━─╯** \n\n"
-        f"**ㅤBot Is Running Up...** \n\n"
+        f"**★ Bot Is Running Up... ** \n\n"
         f"{emoji} **x_x :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"{emoji} **Modules :** `{len(modules)} Modules` \n"
         f"{emoji} **Bot Version:** `{BOT_VER}` \n"
