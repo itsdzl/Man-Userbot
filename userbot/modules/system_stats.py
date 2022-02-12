@@ -170,18 +170,18 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤ  ╭─━━━━━━━━━━━─╮** \n"
-        f"**             ⚡ DzL ⚡  ** \n"
-        f"**ㅤㅤ  ╰─━━━━━━━━━━━─╯** \n\n"
-        f"**ㅤ⚡Bot Is Running Up...** \n"
+        f"**╭─━━━━━━━━━━━─╮** \n"
+        f"**   ⚡ 𝗗 𝗭 𝗟​ ⚡ ** \n"
+        f"**╰─━━━━━━━━━━━─╯** \n\n"
+        f"**ㅤBot Is Running Up...** \n\n"
         f"{emoji} **x_x :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"{emoji} **Modules :** `{len(modules)} Modules` \n"
-        f"{emoji} **Bot Version :** `{BOT_VER}` \n"
-        f"{emoji} **Python Version :** `{python_version()}` \n"
-        f"{emoji} **Pytgcalls Version :** `{pytgcalls.__version__}` \n"
-        f"{emoji} **Telethon Version :** `{version.__version__}` \n"
+        f"{emoji} **Bot Version:** `{BOT_VER}` \n"
+        f"{emoji} **Python :** `{python_version()}` \n"
+        f"{emoji} **Pytgcalls :** `{pytgcalls.__version__}` \n"
+        f"{emoji} **Telethon :** `{version.__version__}` \n"
         f"{emoji} **Bot Uptime :** `{uptime}` \n\n"
-        f"    **[MyBots♪](https://t.me/DzMusicsbot)** | **[Eunoia](https://t.me/{CHANNEL})** | **[DzL](tg://user?id={user.id})**"
+        f"    **[Instagram](https://instagram.com/adtyanrr_?utm_medium=copy_link)** | **[Eunoia](https://t.me/{CHANNEL})** | **[Dizz](tg://user?id={user.id})**"
     )
     if ALIVE_LOGO:
         try:
