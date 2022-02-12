@@ -83,7 +83,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**PONG!! ⚡**\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**⚡PONG!!**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
