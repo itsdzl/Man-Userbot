@@ -67,10 +67,10 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await xx.edit(
-        f"**DzLyzz⚡**\n"
+        f"**Dz-⚡**\n"
         f"✣ **Pong!🏓** - `%sms`\n"
         f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡me** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡ ** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -83,7 +83,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**PONG!! 🍭**\n**nyee** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**PONG!! ⚡**\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -105,7 +105,7 @@ async def _(ping):
         f"`%sms` \n"
         f"❃ **Uptime -** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡➳ gua :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡➳ ** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
