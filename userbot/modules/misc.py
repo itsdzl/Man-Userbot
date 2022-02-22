@@ -62,7 +62,7 @@ async def killdabot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**Man-Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**Dz-Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
     await event.edit("`Man-Userbot Berhasil di matikan!`")
     if HEROKU_APP is not None:
@@ -76,7 +76,7 @@ async def killdabot(event):
     await event.edit("**Man-Userbot Berhasil di Restart**")
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Man-Userbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**Dz-Userbot Restarted**"
         )
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
@@ -113,13 +113,11 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"
-        f"      __Thanks For Using me__\n\n"
+        f"⚡ **Dz-Userbot** ⚡\n\n"
         f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-        f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-        f"✣ **Channel Man :** [Lunatic0de](t.me/Lunatic0de)\n"
+        f"✣ **reCoded by :** [DzL](t.me/Justdzl)\n"
         f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-        f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n"
+        f"✣ **Original Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n"
     )
 
 
