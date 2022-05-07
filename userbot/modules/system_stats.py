@@ -171,7 +171,7 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭─━━━━━━━━━━━─╮** \n"
-        f"**           ⚡ 𝗗 𝗭 𝗟​ ⚡  ** \n"
+        f"**             ⚡ 𝗗 𝗭 𝗟​ ⚡  ** \n"
         f"**╰─━━━━━━━━━━━─╯** \n\n"
         f"**★ Bot Is Running Up...★ ** \n\n"
         f"{emoji} **x_x :** [{user.first_name}](tg://user?id={user.id}) \n"
@@ -181,7 +181,7 @@ async def amireallyalive(alive):
         f"{emoji} **Pytgcalls :** `{pytgcalls.__version__}` \n"
         f"{emoji} **Telethon :** `{version.__version__}` \n"
         f"{emoji} **Bot Uptime :** `{uptime}` \n\n"
-        f"    **[Instagram](https://instagram.com/adtyanrr_?utm_medium=copy_link)** | **[Eunoia](https://t.me/{CHANNEL})** | **[Dizz](tg://user?id={user.id})**"
+        f"    **[Dz Insta](https://instagram.com/adtyanrr_?utm_medium=copy_link)** | **[Eunoia](https://t.me/{CHANNEL})** | **[Dizz](tg://user?id={user.id})**"
     )
     if ALIVE_LOGO:
         try:
