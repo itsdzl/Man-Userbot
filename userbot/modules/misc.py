@@ -115,9 +115,8 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         f"⚡ **Dz-Userbot** ⚡\n\n"
         f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-        f"✣ **reCoded by :** [DzL](t.me/Justdzl)\n"
-        f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-        f"✣ **Original Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n"
+        f"✣ **Official Owner Repo :** [Risman](t.me/mrismanaziz)\n"
+        f"✣ **Official Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n"
     )
 
 
