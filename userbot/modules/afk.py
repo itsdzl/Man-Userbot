@@ -40,18 +40,18 @@ async def set_not_afk(event):
                 shite = await event.client.send_message(event.chat_id, file=pic)
                 shites = await event.client.send_message(
                     event.chat_id,
-                    f"**{owner} Back**\n**From AFK :** `{total_afk_time}` **mnyemnye**",
+                    f"**{owner} Alive**\n**Total AFK :** `{total_afk_time}`",
                 )
             else:
                 shite = await event.client.send_message(
                     event.chat_id,
-                    f"**{owner} Back**\n**From AFK :** `{total_afk_time}` **mnyemnye**",
+                    f"**{owner} Alive**\n**Total AFK :** `{total_afk_time}`",
                     file=pic,
                 )
         except BaseException:
             shite = await event.client.send_message(
                 event.chat_id,
-                f"**{owner} Back**\n**From AFK :** `{total_afk_time}` **mnyemnye**",
+                f"**{owner} Alive**\n**Total AFK :** `{total_afk_time}`",
             )
 
         await asyncio.sleep(6)
@@ -92,12 +92,12 @@ async def on_afk(event):
         msg = None
         if reason:
             message_to_reply = (
-                f"**✘ {owner} AFK** `{total_afk_time}` **ago ✘**\n"
-                + f"**✦҈͜͡➳ reason :** `{reason}`"
+                f"**✘ {owner} AFK!**\n"
+                + f"**✦҈͜͡➳:** `{reason}`"
             )
         else:
             message_to_reply = (
-                f"**✘ AFK** `{total_afk_time}` **yg lalu ✘**"
+                f"**✘ {owner} AFK!**"
             )
         try:
             if pic.endswith((".tgs", ".webp")):
@@ -158,35 +158,35 @@ async def _(event):
                     await event.client.send_message(event.chat_id, file=pic)
                     await event.client.send_message(
                         event.chat_id,
-                        f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                        f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                     )
                 else:
                     await event.client.send_message(
                         event.chat_id,
-                        f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                        f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                         file=pic,
                     )
             except BaseException:
                 await event.client.send_message(
                     event.chat_id,
-                    f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                    f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                 )
         else:
             try:
                 if pic.endswith((".tgs", ".webp")):
                     await event.client.send_message(event.chat_id, file=pic)
                     await event.client.send_message(
-                        event.chat_id, f"**✘ {owner} AFK ✘**"
+                        event.chat_id, f"**✘ {owner} AFK! ✘**"
                     )
                 else:
                     await event.client.send_message(
                         event.chat_id,
-                        f"**✘ {owner} AFK ✘**",
+                        f"**✘ {owner} AFK! ✘**",
                         file=pic,
                     )
             except BaseException:
                 await event.client.send_message(
-                    event.chat_id, f"**✘ {owner} AFK ✘**"
+                    event.chat_id, f"**✘ {owner} AFK! ✘**"
                 )
         await event.delete()
         try:
@@ -195,34 +195,34 @@ async def _(event):
                     await event.client.send_message(BOTLOG_CHATID, file=pic)
                     await event.client.send_message(
                         BOTLOG_CHATID,
-                        f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                        f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                     )
                 else:
                     await event.client.send_message(
                         BOTLOG_CHATID,
-                        f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                        f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                         file=pic,
                     )
             elif reason:
                 await event.client.send_message(
                     BOTLOG_CHATID,
-                    f"\n**✘ {owner} AFK ✘**\n**✦҈͜͡➳ reason :** `{reason}`",
+                    f"\n**✘ {owner} AFK! ✘**\n**✦҈͜͡➳:** `{reason}`",
                 )
             elif pic:
                 if pic.endswith((".tgs", ".webp")):
                     await event.client.send_message(BOTLOG_CHATID, file=pic)
                     await event.client.send_message(
-                        BOTLOG_CHATID, f"\n**✘ {owner} AFK ✘**"
+                        BOTLOG_CHATID, f"\n**✘ {owner} AFK! ✘**"
                     )
                 else:
                     await event.client.send_message(
                         BOTLOG_CHATID,
-                        f"\n**✘ {owner} AFK ✘**",
+                        f"\n**✘ {owner} AFK! ✘**",
                         file=pic,
                     )
             else:
                 await event.client.send_message(
-                    BOTLOG_CHATID, f"\n**✘ {owner} AFK ✘**"
+                    BOTLOG_CHATID, f"\n**✘ {owner} AFK! ✘**"
                 )
         except Exception as e:
             BOTLOG_CHATIDger.warn(str(e))
