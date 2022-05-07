@@ -40,7 +40,7 @@ async def set_not_afk(event):
                 shite = await event.client.send_message(event.chat_id, file=pic)
                 shites = await event.client.send_message(
                     event.chat_id,
-                    f"**{owner} Alive**\n**Total AFK :** `{total_afk_time}`",
+                    f"**{owner} Alive...**\n**Total AFK :** `{total_afk_time}`",
                 )
             else:
                 shite = await event.client.send_message(
